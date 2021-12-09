@@ -68,6 +68,54 @@ section.about div.info-container {
   font-weight: 600;
 }
 
+section.services {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/services.jpg") fixed center;
+}
+
+section.services h3 {
+  color: white;
+  font-size: 3rem;
+}
+
+section.services div.left-side {
+  background-color: white;
+  border-radius: 15px;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section.services div.right-side {
+  background-color: white;
+  border-radius: 15px;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section.services img {
+  border-radius: 15px;
+  width: 400px;
+  padding: 2%;
+}
+
+section.services div.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 div.info-container p {
   max-width: 60%;
 }
@@ -104,5 +152,13 @@ a:active {
 
   section.about {
     flex-direction: row;
+  }
+
+  section.services div.left-side {
+    margin: 2% 25% 2% 2%;
+  }
+
+  section.services div.right-side {
+    margin: 2% 2% 2% 25%;
   }
 }
