@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+  width: 100%;
+  background: url("./images/header-flowers.jpg") fixed center;
+}
+
+header h1 {
+  font-family: "Chicle", cursive;
+  color: rgb(81, 206, 206);
+  font-size: 8rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+section.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+
+section.main h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+section.main p {
+  max-width: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+section.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.about img {
+  border-radius: 15px;
+}
+
+section.about div.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+div.info-container p {
+  max-width: 60%;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(81, 206, 206);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(60, 149, 149);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(136, 243, 243);
+}
+
+a:active {
+  text-decoration: none;
+  color: rgb(67, 230, 230);
+}
+
+@media all and (min-width: 950px) {
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  header h1 {
+    font-size: 5rem;
+  }
+
+  section.about {
+    flex-direction: row;
+  }
+}
